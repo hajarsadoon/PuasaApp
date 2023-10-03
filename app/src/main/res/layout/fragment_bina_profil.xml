@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/BinaProfil"
+    tools:context=".BinaProfil"
+    android:background="@drawable/bg1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_container"/>
+
+    <TextView
+        android:id="@+id/tv_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:fontFamily="@font/rubicmonoonereg"
+        android:text="Pilih Avatar"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_boy"
+        android:layout_width="138dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/selector_avatarb"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:longClickable="true"
+        android:padding="8dp"
+
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_avatar"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_girl"
+        android:layout_width="138dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/selector_avatarg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:longClickable="true"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_boy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_boy"
+        app:layout_constraintTop_toTopOf="@+id/btn_boy"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="308dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_girl">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:ems="10"
+            android:foregroundGravity="center_vertical|center|center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="Nama anda"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="310dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FE5353"
+        android:fontFamily="@font/rubicmonoonereg"
+        android:text="Daftar Akaun"
+        android:textColor="#ffffff"
+        app:circularflow_defaultRadius="15dp"
+        app:circularflow_radiusInDP="15dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView11" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView10"
+        android:layout_width="308dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:hint="Email"
+            android:backgroundTint="@color/white"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView11"
+        android:layout_width="308dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView10"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cardView10"
+        app:layout_constraintTop_toBottomOf="@+id/cardView10" >
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Kata laluan"
+            android:backgroundTint="@color/white"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_logmasuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Log Masuk"
+        android:textColor="#1E88E5"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_create" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

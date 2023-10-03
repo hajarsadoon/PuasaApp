@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    tools:context=".TentangPuasa">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="131dp"
+            android:layout_height="160dp"
+            android:rotation="-50"
+            android:src="@drawable/bg_doa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="131dp"
+            android:layout_height="160dp"
+            android:rotation="140"
+            android:src="@drawable/bg_doa"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/rubicmonoonereg"
+            android:text="Tentang Puasa"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <Button
+            android:id="@+id/btn_niat"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#B093EF"
+            android:fontFamily="@font/rubicmonoonereg"
+            android:text="Senarai Niat"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/btn_orgwajib"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#B093EF"
+            android:fontFamily="@font/rubicmonoonereg"
+            android:text="Orang Yang Wajib Berpuasa"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_niat" />
+
+        <Button
+            android:id="@+id/btn_fadhilat"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#B093EF"
+            android:fontFamily="@font/rubicmonoonereg"
+            android:text="Fadhilat Berpuasa"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_orgwajib" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

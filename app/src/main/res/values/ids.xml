@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="recyclerview_profil" type="id" />
+    <item name="toggle17" type="id" />
+    <item name="textView33" type="id" />
+    <item name="iv_back7" type="id" />
+    <item name="toggle" type="id" />
+    <item name="toggle2" type="id" />
+    <item name="toggle3" type="id" />
+    <item name="toggle4" type="id" />
+    <item name="toggle5" type="id" />
+    <item name="toggle6" type="id" />
+    <item name="toggle7" type="id" />
+    <item name="toggle8" type="id" />
+    <item name="toggle9" type="id" />
+    <item name="toggle10" type="id" />
+    <item name="toggle11" type="id" />
+    <item name="toggle12" type="id" />
+    <item name="toggle13" type="id" />
+    <item name="toggle14" type="id" />
+    <item name="toggle15" type="id" />
+    <item name="toggle16" type="id" />
+    <item name="toggle18" type="id" />
+    <item name="textView34" type="id" />
+    <item name="textView35" type="id" />
+    <item name="textView36" type="id" />
+    <item name="textView38" type="id" />
+    <item name="textView39" type="id" />
+    <item name="textView37" type="id" />
+    <item name="textView40" type="id" />
+    <item name="textView41" type="id" />
+    <item name="textView42" type="id" />
+    <item name="textView43" type="id" />
+    <item name="textView44" type="id" />
+    <item name="textView45" type="id" />
+    <item name="textView46" type="id" />
+    <item name="textView47" type="id" />
+    <item name="textView48" type="id" />
+    <item name="textView49" type="id" />
+    <item name="button" type="id" />
+</resources>

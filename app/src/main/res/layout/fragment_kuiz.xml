@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg6"
+    tools:context="Kuiz">
+
+
+    <ImageView
+        android:id="@+id/iv_back9"
+        android:layout_width="33dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/rubicmonoonereg"
+        android:text="Kuiz"
+        android:textColor="#070707"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_back9" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="37dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="2dp"
+        android:src="@drawable/ic_baseline_lightbulb_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textView63"
+        app:layout_constraintStart_toEndOf="@+id/textView63"
+        app:layout_constraintTop_toTopOf="@+id/textView63" />
+
+    <TextView
+        android:id="@+id/txt_numberQues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/rubicmonoonereg"
+        android:text="1/8"
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView8"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp"
+        app:circularflow_defaultRadius="10dp"
+        app:circularflow_radiusInDP="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_numberQues">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_soalan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/rubicmonoonereg"
+                android:text="Soalan"
+                android:textAlignment="center"
+                android:textColor="#101010"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_ans1"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/rubicmonoonereg"
+        android:text="Answer 1"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#020202"
+        app:circularflow_defaultRadius="10dp"
+        app:circularflow_radiusInDP="10dp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView8"
+        app:layout_constraintStart_toStartOf="@+id/cardView8"
+        app:layout_constraintTop_toBottomOf="@+id/cardView8" />
+
+    <Button
+        android:id="@+id/btn_ans2"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/rubicmonoonereg"
+        android:text="Answer 2"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#0C0C0C"
+        app:circularflow_defaultRadius="10dp"
+        app:circularflow_radiusInDP="10dp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_ans1"
+        app:layout_constraintStart_toStartOf="@+id/btn_ans1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ans1" />
+
+    <Button
+        android:id="@+id/btn_nextQues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#8CBAFF"
+        android:fontFamily="@font/rubicmonoonereg"
+        android:text="Seterusnya"
+        android:textColor="#0C0C0C"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_ans2"
+        app:layout_constraintStart_toStartOf="@+id/btn_ans2"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ans2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.puasaapp.MainActivity">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/RuangUtama"
+            android:orderInCategory="100"
+            android:title="Ruang Utama" />
+    <item
+        android:id="@+id/Profil"
+        android:orderInCategory="100"
+        android:title="Profil" />
+    <item
+        android:id="@+id/TentangPuasa"
+        android:orderInCategory="100"
+        android:title="Tentang Puasa" />
+    <item
+        android:id="@+id/Sirah"
+        android:orderInCategory="100"
+        android:title="Sirah" />
+    <item
+        android:id="@+id/Sunnah"
+        android:orderInCategory="100"
+        android:title="Makanan Sunnah" />
+    <item
+        android:id="@+id/Kuiz"
+        android:orderInCategory="100"
+        android:title="Kuiz" />
+    <item
+        android:id="@+id/Melukis"
+        android:orderInCategory="100"
+        android:title="Melukis" />
+    <item
+        android:id="@+id/MyTracker"
+        android:orderInCategory="100"
+        android:title="MyTracker" />
+        <item
+            android:id="@+id/PapanMarkah"
+            android:orderInCategory="100"
+            android:title="Papan Markah" />
+
+        <item
+            android:id="@+id/LogKeluar"
+            android:orderInCategory="100"
+            android:title="Log Keluar" />
+
+
+    </group>
+</menu>

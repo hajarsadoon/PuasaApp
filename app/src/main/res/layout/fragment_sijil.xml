@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".SkorKuiz">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView9"
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:layout_marginBottom="116dp"
+        app:cardBackgroundColor="#FFE68C"
+        app:cardCornerRadius="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView66"
+                android:layout_width="138dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/rubicmonoonereg"
+                android:text="Tahniah!"
+                android:textColor="#070707"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_namapemain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:fontFamily="@font/rubicmonoonereg"
+                android:text="Nuriman Syamimi"
+                android:textColor="#F41414"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView66"
+                app:layout_constraintStart_toStartOf="@+id/textView66"
+                app:layout_constraintTop_toBottomOf="@+id/textView66" />
+
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="201dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="44dp"
+                android:fontFamily="@font/rubicmonoonereg"
+                android:text="berjaya memperolehi markah kuiz"
+                android:textAlignment="center"
+                android:textColor="#070707"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_namapemain"
+                app:layout_constraintStart_toStartOf="@+id/tv_namapemain"
+                app:layout_constraintTop_toBottomOf="@+id/tv_namapemain" />
+
+            <TextView
+                android:id="@+id/tv_markpemain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/rubicmonoonereg"
+                android:text="10/10"
+                android:textColor="#FA1111"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView68"
+                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintStart_toStartOf="@+id/textView68"
+                app:layout_constraintTop_toBottomOf="@+id/textView68" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="290dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="180dp"
+        app:cardBackgroundColor="#F6B100"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView9"
+        app:layout_constraintStart_toStartOf="@+id/cardView9"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubicmonoonereg"
+                android:text="SIJIL JOM PUASA"
+                android:textColor="#FBFAFA"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/iv_back12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

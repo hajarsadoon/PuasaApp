@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".login">
+
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/fragment_container"/>-->
+
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="232dp"
+        android:fontFamily="@font/rubicmonoonereg"
+        android:text="Log Masuk"
+        android:textColor="#040303"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView13"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView69">
+
+        <EditText
+            android:id="@+id/et_emaillogmasuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffffff"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView14"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView13">
+
+        <EditText
+            android:id="@+id/et_passwordlogmasuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffffff"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Kata Laluan"
+            android:inputType="textPassword" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_logmasuk"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#FE5353"
+        android:fontFamily="@font/rubicmonoonereg"
+        android:text="Mula"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView14" />
+
+    <TextView
+        android:id="@+id/tv_dftrmsuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Daftar Masuk"
+        android:textColor="#1E88E5"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_logmasuk"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/btn_logmasuk"
+        app:layout_constraintTop_toBottomOf="@+id/btn_logmasuk" />
+</androidx.constraintlayout.widget.ConstraintLayout>
